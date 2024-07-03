@@ -22,8 +22,8 @@ This PHP script connects to a MySQL database, retrieves table and column informa
 
 1. **Clone the Repository**:
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/es-77/create_postman_collections.git
+    cd create_postman_collections
     ```
 
 2. **Update Database Credentials**:
