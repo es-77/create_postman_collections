@@ -1,8 +1,20 @@
 <?php
 
-$dsn = 'mysql:host=localhost;port=3306;dbname=ikonic';
-$username = 'root';
-$password = '';
+// $dsn = 'mysql:host=localhost;port=3306;dbname=ikonic';
+// $username = 'root';
+// $password = '';
+
+
+$port = $_POST['port'];
+$database_name = $_POST['database_name'];
+$user_name = $_POST['user_name'];
+$password = $_POST['password'];
+$localhost = $_POST['localhost'];
+
+$dsn = 'mysql:host=' . $localhost . ';port=' . $port . ';dbname=' . $database_name . '';
+$username = $user_name;
+$password = $password;
+
 $options = array(
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 );
