@@ -155,10 +155,8 @@ $postManCollection = '{
 	$postManCollection .=']
 }';
 
-// print($postManCollection);
-// die;
-
 $filename = $database_name . '.json';
 
 file_put_contents($filename, $postManCollection);
+include('./downloadFileCode.php');
 echo "okay";
